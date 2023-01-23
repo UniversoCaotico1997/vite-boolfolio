@@ -9,7 +9,7 @@ export default {
 
     <div class="container">
 
-        <h2 class="text-center text-uppercase mb-5">Contacts</h2>
+        <h2 class="text-center text-uppercase mb-5">Add Contacts</h2>
 
         <p class="lead">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, adipisci optio, tempore maiores sit
