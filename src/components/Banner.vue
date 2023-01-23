@@ -8,7 +8,6 @@ export default {
 <template>
 
     <div class="banner">
-        <hr>
         <h1 class="text-center mb-5">
             All Projects
         </h1>

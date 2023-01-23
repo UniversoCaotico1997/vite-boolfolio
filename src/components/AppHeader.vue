@@ -2,7 +2,7 @@
 import NavBar from "./NavBar.vue";
 import Banner from "./Banner.vue";
 export default {
-    name: 'Header',
+    name: 'AppHeader',
     components: {
         NavBar,
         Banner

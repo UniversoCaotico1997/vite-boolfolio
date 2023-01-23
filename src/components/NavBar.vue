@@ -32,7 +32,7 @@ export default {
             </div>
         </div>
     </nav>
-
+    <hr>
 
 </template>
 
