@@ -1,5 +1,6 @@
 <script>
 import axios from "axios";
+
 export default {
     name: 'AppMain',
     data() {
@@ -52,7 +53,7 @@ export default {
 
     <section class="vue-home">
         <div class="container">
-
+            <h2 class="text-center text-uppercase mb-5">All Projects</h2>
             <div v-if="projects">
 
                 <div class="row row-cols-1 row-cols-sm-3 g-4">

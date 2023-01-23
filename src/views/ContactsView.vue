@@ -9,13 +9,15 @@ export default {
 
     <div class="container">
 
+        <h2 class="text-center text-uppercase mb-5">Contacts</h2>
+
         <p class="lead">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, adipisci optio, tempore maiores sit
             asperiores
             sed est nulla esse quos quam laudantium, voluptatibus minus officiis assumenda. Ex vitae eos earum.
         </p>
 
-        <form action="">
+        <form action="" class="border shadow p-3 mb-5 bg-body-tertiary rounded">
             <div class="mb-3">
                 <label for="" class="form-label">Full Name</label>
                 <input type="text" name="" id="" class="form-control" placeholder="Mario Rossi"
