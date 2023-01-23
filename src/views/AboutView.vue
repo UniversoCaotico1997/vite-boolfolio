@@ -6,7 +6,11 @@ export default {
 </script>
 
 <template>
-    <h1>ciao</h1>
+
+    <div>
+        <h1>ciao</h1>
+    </div>
+
 </template>
 
 <style>

@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import HomeView from './views/HomeView';
-import BlogView from './views/BlogView';
-import AboutView from './views/AboutView';
-import ContactsView from './views/ContactsView';
+import HomeView from './views/HomeView.vue';
+import BlogView from './views/BlogView.vue';
+import AboutView from './views/AboutView.vue';
+import ContactsView from './views/ContactsView.vue';
 
 
 const router = createRouter({
@@ -20,8 +20,8 @@ const router = createRouter({
             component: BlogView
         },
         {
-            path: '/abut',
-            name: 'abut',
+            path: '/about',
+            name: 'about',
             component: AboutView
         },
         {

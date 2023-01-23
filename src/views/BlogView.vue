@@ -1,12 +1,18 @@
 <script>
+import AppMain from "../components/AppMain.vue";
 export default {
-    name: 'BlogView'
+    name: 'BlogView',
+    components: {
+        AppMain
+    }
 }
 
 </script>
 
 <template>
-    <h1>ciao</h1>
+
+    <AppMain></AppMain>
+
 </template>
 
 <style>

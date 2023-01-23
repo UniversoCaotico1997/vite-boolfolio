@@ -6,7 +6,7 @@ export default {
 
 
 <template>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-secondary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Home Page</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -17,22 +17,23 @@ export default {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <router-link class="nav-link active" aria-current="page"
+                            :to="{ name: 'home' }">Home</router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <router-link class="nav-link" :to="{ name: 'blog' }">Blog</router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <router-link class="nav-link" :to="{ name: 'about' }">About</router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacts</a>
+                        <router-link class="nav-link" :to="{ name: 'contacts' }">Contacts</router-link>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <hr>
+
 
 </template>
 
