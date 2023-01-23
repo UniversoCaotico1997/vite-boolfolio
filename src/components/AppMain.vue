@@ -1,14 +1,15 @@
 <script>
 import axios from "axios";
+import { store } from "../store.js";
 
 export default {
     name: 'AppMain',
     data() {
         return {
             projects: null,
-            base_url_api: 'http://localhost:8000',
             loading: true,
-            error: null
+            error: null,
+            store
         }
     },
     methods: {
@@ -29,7 +30,7 @@ export default {
         getImagePath(path) {
             // console.log(path);
             if (path) {
-                return this.base_url_api + /storage/ + path
+                return this.store.base_url_api + /storage/ + path
             }
             return '/img/placeholder.jpg'
         },
@@ -43,7 +44,7 @@ export default {
         }
     },
     mounted() {
-        this.getProjects(this.base_url_api + '/api/projects');
+        this.getProjects(this.store.base_url_api + '/api/projects');
     }
 }
 
