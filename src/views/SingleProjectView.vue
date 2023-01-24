@@ -12,20 +12,41 @@ export default {
         }
     },
     mounted() {
-        // console.log(this.$params.slug);
+        // console.log(this.$route.params.slug);
 
-        const url = this.store.base_url_api + '/api/projects' + this.$params.slug
-        axios.get(this.store + '/projects/')
+        const url = this.store.base_url_api + '/api/projects/' + this.$route.params.slug
+        // console.log(url);
+
+        axios
+            .get(url)
+            .then(response => {
+                // console.log(response.data.results);
+
+                if (response.data.success) {
+                    this.project = response.data.results
+                    this.loading = false
+                } else {
+                    this.$router.push({ name: 'not-found' })
+                }
+            }).catch(error => {
+                console.log(error)
+            })
     }
 }
 
 </script>
 
 <template>
-    <div>
-        <h1>
-            Ciao
-        </h1>
+    <div class="single_project" v-if="project">
+        <img class="img-fluid w-100" :src="store.base_url_api + '/storage/' + project.cover_image" :alt="project.title">
+        <div class="container">
+            <h2>
+                {{ project.title }}
+            </h2>
+            <div class="content">
+                {{ project.description }}
+            </div>
+        </div>
     </div>
 </template>
 

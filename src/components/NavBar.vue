@@ -2,7 +2,7 @@
 export default {
     name: 'NavBar',
     mounted() {
-        console.log(this.$router.currentRoute._value.name);
+        // console.log(this.$router.currentRoute._value.name);
 
     }
 }
@@ -12,7 +12,7 @@ export default {
 <template>
     <nav class="navbar navbar-expand-lg bg-secondary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="#">Home Page</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
