@@ -5,6 +5,7 @@ import BlogView from './views/BlogView.vue';
 import AboutView from './views/AboutView.vue';
 import ContactsView from './views/ContactsView.vue';
 import SingleProjectView from './views/SingleProjectView.vue';
+import WelcomeView from "./views/WelcomeView.vue";
 
 
 
@@ -13,6 +14,11 @@ const router = createRouter({
     routes: [
         {
             path: '/',
+            name: 'welcome',
+            component: WelcomeView
+        },
+        {
+            path: '/home',
             name: 'home',
             component: HomeView
         },

@@ -38,13 +38,15 @@ export default {
 
 <template>
     <div class="single_project" v-if="project">
-        <img class="img-fluid w-100" :src="store.base_url_api + '/storage/' + project.cover_image" :alt="project.title">
         <div class="container">
-            <h2>
+            <h1 class="text-center">
                 {{ project.title }}
-            </h2>
+            </h1>
+            <img class="img-fluid" :src="store.base_url_api + '/storage/' + project.cover_image" :alt="project.title">
             <div class="content">
-                {{ project.description }}
+                <p>
+                    {{ project.description }}
+                </p>
             </div>
         </div>
     </div>

@@ -1,11 +1,9 @@
 <script>
 import NavBar from "./NavBar.vue";
-import Jumbotron from "./jumbotron.vue";
 export default {
     name: 'AppHeader',
     components: {
-        NavBar,
-        Jumbotron
+        NavBar
     }
 }
 
@@ -14,8 +12,6 @@ export default {
 <template>
 
     <NavBar></NavBar>
-
-    <Jumbotron></Jumbotron>
 
 </template>
 

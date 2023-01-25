@@ -1,11 +1,17 @@
 <script>
+import AppHeader from "../components/AppHeader.vue";
 export default {
-    name: 'AboutView'
+    name: 'AboutView',
+    components: {
+        AppHeader
+    }
 }
 
 </script>
 
 <template>
+
+    <AppHeader></AppHeader>
 
     <div class="container">
         <p class="lead">

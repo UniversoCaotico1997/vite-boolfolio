@@ -1,8 +1,10 @@
 <script>
+import AppHeader from "../components/AppHeader.vue";
 import AppMain from "../components/AppMain.vue";
 export default {
     name: 'BlogView',
     components: {
+        AppHeader,
         AppMain
     }
 }
@@ -10,6 +12,8 @@ export default {
 </script>
 
 <template>
+
+    <AppHeader></AppHeader>
 
     <AppMain></AppMain>
 
