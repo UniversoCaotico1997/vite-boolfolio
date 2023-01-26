@@ -10,11 +10,9 @@ export default {
         <div class="container d-flex justify-content-center align-items-center">
             <div class="square border rounded shadow text-center text-white position-relative">
                 <h1 class="display-4 mt-3">
-                    Welcome
-                    <br> In
-                    <br> My Space
+                    Welcome In My Space
                 </h1>
-                <h5 class="mt-5">
+                <h5>
                     Click For See More
                 </h5>
                 <img src="../assets/img/logo.png" class="w-100 position-absolute top-50 start-50 translate-middle"
